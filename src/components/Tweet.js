@@ -31,10 +31,10 @@ const Tweet = props => {
 
   return (
     <div className="row callout twit center">
-      <div className="small-1 columns">
+      <div className="small-2 columns large-1 columns">
         <img src={props.profile_image_url}/>
       </div>
-      <div className="small-11 columns">
+      <div className="small-10 columns large-11 columns">
         <div className="row">
           <span>{props.name} </span>
           <span className="gray">@{props.screen_name} ∙ {date}</span>
@@ -45,10 +45,10 @@ const Tweet = props => {
           <img src={props.display_url}/>
         </div>
         <div className="row gray">
-          <div className="small-1 columns">{reply_icon}</div>
-          <div className="small-1 columns"><span>{favorite_icon} {props.favorite_count}</span></div>
-          <div className="small-1 columns"><span>{retweet_icon} {props.retweet_count}</span></div>
-          <div className="small-9 columns">{more_icon}</div>
+          <div className="small-3 columns large-2 columns">{reply_icon}</div>
+          <div className="small-3 columns large-2 columns"><span>{favorite_icon} {props.favorite_count}</span></div>
+          <div className="small-3 columns large-2 columns"><span>{retweet_icon} {props.retweet_count}</span></div>
+          <div className="small-3 columns large-6 columns">{more_icon}</div>
         </div>
       </div>
     </div>
